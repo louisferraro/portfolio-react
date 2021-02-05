@@ -1,0 +1,124 @@
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.ha{
+    background-color:red;
+}
+.re{
+    color:blue;
+    background-color:blue;
+}
+
+.card{
+  margin-top: 90px !important;
+}
+.visa{
+  margin-top:100px !important;
+}
+.whitemobile{
+  margin-top: -160px !important;
+}
+.designer{
+  background-color: #0a2540;
+  color:#fff;
+  width:100% ;
+  height:1100px;
+
+
+}
+/* .dd{
+  background-color: #0a2540;
+} */
+.des{
+  
+  background-color:#0a2540;
+  width:100%;
+  height: 190px;
+  transform: skewY(-5deg);
+}
+/* .flip-box {
+  background-color: transparent;
+  max-width: 502px;
+  height: 361px;
+  border: 1px solid #f1f1f1;
+  perspective:1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: blue;
+  color: red;
+  transform: rotateY(180deg);
+} */
+.dess{
+
+  background-color:#0a2540;
+  width:100%;
+  height: 300px;
+  transform: skewY(-7deg);
+  margin-top:-170px
+  
+}
+
+
+
+
+.designer-content{
+  padding-top:250px;
+  margin-top: -134px;
+}
+
+.caption{
+color: #03a1c7
+}
+.grid-item {
+  width:250px;
+  margin: 5px;
+  height:100% ;
+  float: left;
+  display:inline-block;
+
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;  
+}
+
+.grid-item--width1 { width: 25%; }
+.grid-item--width2 { width: 45%; }
+.grid-item--width3 { width: 33.34%; }
+.grid-item--width4 { width: 780px; }
+
+.grid-item--height1 { height: auto; }
+.width75 {width:65%}
+.grid-item--height2 { height: 205px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }

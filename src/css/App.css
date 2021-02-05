@@ -1,0 +1,225 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.introText {
+  justify-content: center;
+  text-align: center;
+}
+
+.projects {
+  background-color: white;
+}
+
+.projects-container {
+  justify-content: center;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.projects-pickup {
+  /* background-image: linear-gradient(
+    to right top,
+    #fbd40d,
+    #b0e350,
+    #64e790,
+    #00e4c7,
+    #12dbeb
+  ); */
+}
+
+.mockup {
+  width: auto;
+  height: 1000px;
+}
+
+.demo {
+  background: url("../assets/stock-page-recording.gif") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0);
+}
+
+.divie {
+  color: #8a84ff;
+}
+
+.divie-project-background {
+  background-image: linear-gradient(
+    to right top,
+    #8a84ff,
+    #596dc8,
+    #385590,
+    #1c2026
+  );
+  height: 100vh;
+  transform: skewY(-6deg);
+}
+
+.non-diagonal {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 1.5em;
+  position: relative;
+}
+
+.pickup {
+  color: #8a84ff ;
+}
+
+.see-more-pickup {
+  background-color: #fbd40d !important;
+  border-color: #fbd40d !important;
+  border-radius: 16.5px !important;
+}
+
+.see-more-pickup:hover {
+  background-color: #ccc !important;
+  border-color: #ccc !important;
+}
+
+.see-more {
+  background-color: #8a84ff !important;
+  border-color: #8a84ff !important;
+  border-radius: 16.5px !important;
+}
+
+.see-more:hover {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.button {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.project-images {
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 10px -10px white;
+}
+
+.project-title {
+  color: rgb(29, 27, 27);
+  justify-content: center;
+}
+
+.project-title-pickup {
+  color: black;
+  justify-content: center;
+}
+
+.box-images {
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-2px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+}
+
+.projects:hover .overlay {
+  opacity: 1;
+}
+
+.header {
+  background-color: #000000;
+  min-height: 93vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.contact {
+  background-color: #000000;
+  min-height: 20vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.particles {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.particles-contact {
+  position: absolute;
+  height: 20vh;
+  width: 100%;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.small-project-card {
+  background-color: transparent;
+  /* these need to stay this size */
+  width: 500px;
+  height: 400px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.small-project-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.small-project-card:hover .small-project-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.small-project-card-front,
+.small-project-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.small-project-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

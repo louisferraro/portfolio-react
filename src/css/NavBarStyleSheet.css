@@ -1,0 +1,15 @@
+.navLinks {
+  padding: 20px;
+  color: #f5f5f7d2;
+}
+
+.navLinks:hover {
+  padding: 20px;
+  color: #f5f5f7;
+  text-decoration: none;
+}
+
+.bg-black {
+  background-color: black;
+  /*background-image: url("../assets/dark-space-background.png");*/
+}
