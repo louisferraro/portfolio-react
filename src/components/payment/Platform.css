@@ -1,17 +1,15 @@
-.platform{
-    background-color: #0a2540;
+.platform {
+  background-color: #0a2540;
 }
 
-.sky{
-    color:  #0de4e4
-
+.sky {
+  color: #0de4e4;
 }
-.white{
-    color:#fff;
+.white {
+  color: #fff;
 }
-.btn{
-    background-color: #0de4e4;
-    color:black;
-    border-radius: 35px;
-    padding: 5px;
+.btn {
+  color: black;
+  border-radius: 35px;
+  padding: 5px;
 }

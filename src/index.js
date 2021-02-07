@@ -5,15 +5,15 @@ import "./css/index.css";
 import HomePage from "./pages/HomePage";
 import reportWebVitals from "./reportWebVitals";
 import Divie from "./components/projects/Divie";
-import  PaymentPage from "./pages/PaymentPage"
+import PaymentPage from "./pages/PaymentPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
   <BrowserRouter>
     <div className="main">
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/paymentpage" component={PaymentPage} />
-        <Route exact path="/divie" component={Divie} />
+        <Route exact path="/divie" component={PaymentPage} />
       </Switch>
     </div>
   </BrowserRouter>,

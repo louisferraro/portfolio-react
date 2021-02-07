@@ -1,142 +1,94 @@
-import React from 'react'
-import { Row, Col, Container,Nav,NavItem,Button,Image}  from "react-bootstrap";
+import React from "react";
+import {
+  Row,
+  Col,
+  Container,
+  Nav,
+  NavItem,
+  Button,
+  Image,
+} from "react-bootstrap";
 import "./Stripe.css";
 
 export default function Stripe() {
-    return (
-        <div className="stripe mt-5 ">
+  return (
+    <div className="stripe mt-5 ">
+      <Container>
+        <Row>
+          <Col md={6} className="mt-5 py-5">
+            <h1 className="skpe">Main Dashboard</h1>
+            <h5>The UX</h5>
+            <p>
+              This is what users see when they first come to the app. Users can
+              view information such as their balance, their average stock price,
+              etc. This is their portfolio at a glance.
+            </p>
+            <h5>The Tech</h5>
+            <p>
+              {" "}
+              Used TD Ameritrade's API to allow users to connect their bank
+              info. This info is stored in the DB as well as Redux so any
+              component can easily use this data. User's favorites are also
+              stored in firestore as well as the Redux store.
+            </p>
+          </Col>
+          <Col md={6} className="mt-5 ">
+            <Image fluid src="/static/main-dash.png" />
+          </Col>
+        </Row>
+      </Container>
 
-<Container>
-  <Row>
-    <Col>
-    <h4  className="skpe mt-5 "> Get started right </h4>
+      <div className="mt-5">
+        <Container>
+          <Row>
+            <Col md={6} className="mt-5 pt-5 ">
+              <h1 className="skpe"> Stock Stats</h1>
+              <h5> The UX</h5>
+              <p>
+                Users can look at financial data such as price targets, balance
+                sheets, income statements, and company financials. The company
+                description is also toggle-able. The information is displayed in
+                order from easiest to digest to hardest.
+              </p>
+              <h5>The Tech</h5>
+              <p>
+                {" "}
+                The data is fetched from the database based on the stock ticker.
+                If this info is not already in the database, multiple API
+                requests are made to different providers to put them in the
+                database, then it's retrieved.
+              </p>
+            </Col>
+            <Col md={6} className="mt-5">
+              <Image fluid src="/static/netflix.png" />
+            </Col>
+          </Row>
+        </Container>
+      </div>
 
-            <h1 className="mt-4"> Pick the integration that’s right for you</h1>
-
-
-            <p className="mt-4">Stripe provides flexible integration options that simplify PCI compliance  without <br/> compromising on the checkout experience.</p>
-            
-    
-    </Col>
- 
-  </Row>
-  
-</Container>
-
-            
-
-
-
-
-
-
-
-
-
-
-            <Container>
-  <Row>
-    <Col md={6} className="mt-5 py-5">
-    <h4 ClassName="skpe"> Hosted payment page </h4>
-
-    <p>Simplify your integration using Stripe Checkout. It dynamically adapts to your customer’s device and location to increase conversion, and supports coupons, tax rates, and more.</p>
-    </Col>
-    <Col md={6} className="mt-5 shadow-lg">
-        
-        
-    <Image fluid src="/static/payment/host.png" />
-        
-        </Col>
-  </Row>
-  
-</Container>
-
-
-
-
-
-<div className="mt-5">
-
-
-<Container>
-  <Row>
-    <Col md={6} className="mt-5 pt-5 ">
-    <h1 className= "skpe"> Fully customizable flows</h1>
-
-
-    <p>Design your own payments form on your site using Stripe Elements—our rich, prebuilt UI components. Or contact us to build a fully API-based integration with your own UI.</p>
-    </Col>
-    <Col md={6}  className="mt-5 shadow-lg"> 
-    
-    <Image fluid src="/static/payment/flow.png" />
-
-    </Col>
-  </Row>
-  
-</Container>
-  
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div className="mt-5">
- 
-
-<Container>
-  
-  
-<h2 className="skpe mt-5">More ways to integrate</h2>
-  <Row>
-    <Col  md={3} className="mt-3">
-    <div className="icon">
-    
+      <div className="mt-5">
+        <Container>
+          <Row>
+            <Col md={6} className="mt-5 pt-5 ">
+              <h1 className="skpe">Charts</h1>
+              <h5> The UX</h5>
+              <p>
+                Users can view 1 year of stock price along with MACD, RSI, and
+                20 day EMA. Users can also export this data to csv.
+              </p>
+              <h5>The Tech</h5>
+              <p>
+                {" "}
+                Again, this data is fetched from the database and displayed in
+                the same way as the stats component.
+              </p>
+            </Col>
+            <Col md={6} className="mt-5">
+              <Image fluid src="/static/charts.png" />
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
-    <h5> Flexible invoicing</h5>
-    <p>Create customizable invoices to accept recurring or one-off payments.</p>
-    
-    </Col>
-    <Col md={3} className="mt-3">
-    <div className="icon">
-    <h5>Mobile apps</h5>
-    <p>Accept payments in your iOS or Android app using our mobile SDKs.</p>
-    </div>
-    </Col>
-    <Col md={3} className="mt-3">
-    <div className="icon">
-<h5>In-person payments</h5>
-<p> Use Stripe Terminal to extend Stripe payments to your point of sale solution.</p>
-    </div>
-    </Col>
-
-    <Col md={3} className="mt-3">
-    <div className="icon">
-<h5> Third-party integrations</h5>
-<p>Explore our partner directory for prebuilt integrations to popular platforms and plugins.</p>
-    </div>
-    </Col>
-  </Row>
-</Container>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-        </div>
-    )
+  );
 }

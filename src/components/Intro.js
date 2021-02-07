@@ -103,6 +103,7 @@ const Intro = () => {
                 >
                   <div>
                     <Button
+                      size="lg"
                       variant="light"
                       onClick={() =>
                         window.open("https://github.com/louisferraro")
@@ -111,6 +112,7 @@ const Intro = () => {
                       <FontAwesomeIcon icon={faGithub} />
                     </Button>{" "}
                     <Button
+                      size="lg"
                       variant="light"
                       onClick={() =>
                         window.open(

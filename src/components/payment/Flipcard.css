@@ -1,14 +1,17 @@
-.card{
-    margin-left: 15px;
-
+.card {
+  margin-left: 15px;
 }
-.Blackmobile{
-    margin-left: 20px;
+.Blackmobile {
+  margin-left: 20px;
 }
-.Mobilewhite{
-    margin-top: 40px;
+.Mobilewhite {
+  margin-top: 40px;
 }
 .Chart {
-    margin-top: 40px;
-    margin-left: 25px;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.img {
+  cursor: pointer;
 }
