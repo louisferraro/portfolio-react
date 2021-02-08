@@ -1,7 +1,14 @@
-.top{
-    background-color: #fff;
-    
+.top {
+  background-color: #fff;
 }
-.tittle{
-display : flex;
+.tittle {
+  display: flex;
+}
+
+.logo {
+  margin-top: 80px;
+}
+
+.nav {
+  color: black;
 }

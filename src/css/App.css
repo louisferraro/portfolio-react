@@ -3,6 +3,18 @@
   pointer-events: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -75,7 +87,7 @@
 }
 
 .pickup {
-  color: #8a84ff ;
+  color: #8a84ff;
 }
 
 .see-more-pickup {
@@ -107,8 +119,8 @@
 }
 
 .project-images {
-  animation: float 6s ease-in-out infinite;
-  box-shadow: 10px -10px white;
+  animation: float 5s ease-in-out infinite;
+  /* box-shadow: 10px -10px white; */
 }
 
 .project-title {

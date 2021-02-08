@@ -13,9 +13,6 @@ const NavBar = () => {
           <Link to="/" className="navLinks">
             Home
           </Link>
-          <Link to="paymentpage" className="navLinks">
-            Payment 
-          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

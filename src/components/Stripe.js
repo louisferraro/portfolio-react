@@ -16,11 +16,9 @@ export default function Stripe() {
           <Container>
             <Row>
               <Col md={6}>
-                <h5 className="caption"> Designed for developers</h5>
+                <h5 className="caption">Attention to Detail</h5>
 
-                <h1 className="mt-4">
-                  The world’s most powerful and easy-to-use APIs
-                </h1>
+                <h1 className="mt-4"></h1>
 
                 <div className="body mt-4">
                   <p>
@@ -45,8 +43,6 @@ export default function Stripe() {
                             We offer client and server libraries in everything
                             from React and PHP to .NET and iOS.
                           </p>
-
-                          <Button variant="link">See LiBraries </Button>
                         </div>
                       </Col>
                       <Col md={6}>
@@ -57,8 +53,6 @@ export default function Stripe() {
                             Use integrations for systems like Shopify,
                             WooCommerce, NetSuite, and more.
                           </p>
-
-                          <Button variant="link">Explore partners</Button>
                         </div>
                       </Col>
                     </Row>

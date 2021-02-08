@@ -31,15 +31,32 @@ const Divie = () => {
                   Check it out <FontAwesomeIcon icon={faAngleRight} />
                 </Button>
               </div>
-              <Image
-                fluid
-                rounded
-                className="project-images box-images"
-                src="/static/main-dash.png"
-              />
+              <div className="grid-item width75 text-center Chart img">
+                <video
+                  onClick={handleClick}
+                  width="700px"
+                  fluid
+                  className="video-container video-container-overlay"
+                  autoPlay
+                  loop
+                  muted
+                  data-reactid=".0.1.0.0"
+                >
+                  <source
+                    type="video/mp4"
+                    data-reactid=".0.1.0.0.0"
+                    src="static/stock-page-recording.mov"
+                  ></source>
+                </video>
+              </div>
             </Col>
             <Col md="4">
-              <Image fluid src="/static/tesla-iphone.png" />
+              <Image
+                className="img"
+                onClick={handleClick}
+                fluid
+                src="/static/tesla-iphone.png"
+              />
             </Col>
           </Row>
         </Container>

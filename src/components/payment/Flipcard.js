@@ -151,10 +151,10 @@ export default function Flipcard() {
 
   return (
     <div className="flip">
-      <div className="container mt-5 pt-3">
+      <div className="container pt-3">
         <Row>
           <Col>
-            <h2 className="display-3 font-weight-bolder d-block divie mb-5 text-center  ">
+            <h2 className="display-3 font-weight-bolder d-block divie  text-center  ">
               {" "}
               Projects
             </h2>
@@ -163,11 +163,11 @@ export default function Flipcard() {
 
         <div className="grid">
           <div className="grid-item shadow-lg border border-light visa img">
-            <Image
+            {/* <Image
               fluid
               src="/static/visa.png"
               onClick={() => setModalShowVisa(true)}
-            />
+            /> */}
 
             <MyVerticallyCenteredModalVisa
               show={modalShowVisa}
@@ -216,14 +216,23 @@ export default function Flipcard() {
 
   <Image fluid src="/static/mobilewhite.png" width="300px" />
   </div> */}
-          <div className="grid-item width75 shadow-lg border border-light text-center Chart img">
-            <Image
+          <div className="grid-item width75 text-center Chart img">
+            <video
+              width="700px"
               fluid
-              src="/static/grahphic.png"
-              width="1000px"
-              className="img-fluid"
               onClick={() => setModalShowChart(true)}
-            />
+              className="video-container video-container-overlay"
+              autoPlay
+              loop
+              muted
+              data-reactid=".0.1.0.0"
+            >
+              <source
+                type="video/mp4"
+                data-reactid=".0.1.0.0.0"
+                src="static/cut-demo-sneakyelves.mov"
+              ></source>
+            </video>
 
             <MyVerticallyCenteredModalChart
               show={modalShowChart}

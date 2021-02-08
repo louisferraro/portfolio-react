@@ -71,9 +71,7 @@ export default function Top() {
           <Col md={6}>
             <div className="nav">
               <Nav defaultActiveKey="/" as="ul">
-                <Nav.Item as="li">
-                  <Nav.Link href="/">Home</Nav.Link>
-                </Nav.Item>
+                <Nav.Link href="/">Home</Nav.Link>
               </Nav>
             </div>
           </Col>

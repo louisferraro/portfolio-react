@@ -155,7 +155,7 @@ const Intro = () => {
                 <Image fluid src="/static/redux-logo.png" />
               </Col>
               <Col xs="5" md="1">
-                <Image fluid src="/static/atlassian-logo.png" />
+                <Image fluid src="/static/c-logo.png" />
               </Col>
             </Row>
           </div>
