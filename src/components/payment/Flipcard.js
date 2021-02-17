@@ -124,16 +124,26 @@ function MyVerticallyCenteredModalChart(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Chart Project
+          Sneaky Elves
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Chart Project Detail</h4>
+        <h4>A 2d Top-Down game built with Unity in C#</h4>
+        <p>Used prefabs to generate enemy entities within each level.</p>
         <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
+          Wrote enemy AI to determine how smart the enemies were for each of the
+          three levels. For Level 1, enemies will only chase you if you get in
+          their vision cone. Level 2 enemies have abilities of Level 1 but will
+          roam randomly in a predefined radius. Level 3 can has Level 2 AI but
+          can also "hear" footsteps of closeby users.
         </p>
+        <Button
+          onClick={() =>
+            window.open("https://github.com/louisferraro/sneaky-elves-game")
+          }
+        >
+          Check out the code
+        </Button>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -152,22 +162,13 @@ export default function Flipcard() {
   return (
     <div className="flip">
       <div className="container pt-3">
-        <Row>
-          <Col>
-            <h2 className="display-3 font-weight-bolder d-block divie  text-center  ">
-              {" "}
-              Projects
-            </h2>
-          </Col>{" "}
-        </Row>
-
         <div className="grid">
           <div className="grid-item shadow-lg border border-light visa img">
-            {/* <Image
+            <Image
               fluid
               src="/static/visa.png"
               onClick={() => setModalShowVisa(true)}
-            /> */}
+            />
 
             <MyVerticallyCenteredModalVisa
               show={modalShowVisa}

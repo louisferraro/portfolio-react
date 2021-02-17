@@ -64,7 +64,7 @@ const Intro = () => {
                   className="display-1 font-weight-bolder h1 introText"
                   style={styles.fadeInDown}
                 >
-                  Hello, I'm Louis Ferraro.
+                  Hi, I'm Louis Ferraro.
                 </h1>
                 <h3
                   className="display-4 font-weight-light introText"
